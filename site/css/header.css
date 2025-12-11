@@ -32,7 +32,7 @@ body {
 
 .nav {
   display: flex;
-  width: 900px;
+  width: 1900px;
   padding: 0 40px;
   gap: 40px;
 }
@@ -192,8 +192,13 @@ nav ul a {
   filter: drop-shadow(5px 5px 5px #666666);
 }
 
+a {
+  transition: all 0.5s;
+}
+
 a:hover {
   color: white;
+  transform: scale(1.1);
 }
 
 .previous {
