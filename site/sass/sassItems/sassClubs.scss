@@ -1,0 +1,184 @@
+@import '../header.css';
+
+$colorBlue: #0080C7;
+$blak: #262626;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-clubs1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1920px;
+    margin-left: 100px;
+
+    .PAGE-HEADER {
+        // width: 1442px;
+        font-family: Oswald;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 56px;
+        leading-trim: NONE;
+        line-height: 64px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        margin-top: 80px;
+
+    }
+
+    .aboutClubs1 {
+        .aboutClubs1-text {
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 20px;
+            leading-trim: NONE;
+            line-height: 28px;
+            letter-spacing: 0%;
+            margin-top: 64px;
+            margin-bottom: 32px;
+
+        }
+
+        .aboutClubs1-text2 {
+            font-family: Inter;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 20px;
+            leading-trim: NONE;
+            line-height: 28px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+
+        }
+    }
+
+
+    // section club list
+
+
+    .clubs-list1 {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 1442px;
+        height: 5929px;
+        // border: 1px solid grey;
+
+        .clubs-list1_left {
+            display: flex;
+            flex-direction: column;
+            width: 552px;
+            height: 2808px;
+            // border: 1px solid black;
+
+            .clubs-list1_left-russia {
+                display: flex;
+                gap: 16px;
+                margin-bottom: 32px;
+
+                .clubs-list1_left-russia_name {
+                    font-family: Inter;
+                    font-weight: 700;
+                    font-style: Bold;
+                    font-size: 24px;
+                    leading-trim: NONE;
+                    line-height: 32px;
+                    letter-spacing: 0%;
+                    text-transform: uppercase;
+                    color: $colorBlue;
+                }
+            }
+
+            .clubs-list1_left-alfavit_text {
+                font-family: Inter;
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 24px;
+                letter-spacing: 0%;
+                color: $blak;
+            }
+
+            .clubs-list1_left-search {
+                margin-top: 32px;
+                margin-bottom: 32px;
+
+                .search-container {
+                    position: relative;
+                    width: 100%;
+                    max-width: 500px;
+                    /* Можно изменить */
+                    margin: 0 auto;
+                }
+
+                .search-input {
+                    width: 100%;
+                    padding: 15px 20px 15px 50px;
+                    // border-radius: 50px;
+                    border: 2px solid #e0e0e0;
+                    font-size: 16px;
+                    transition: all 0.3s ease;
+                    outline: none;
+                }
+
+                .search-input:focus {
+                    border-color: #3498db;
+                    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+                }
+
+                .search-icon {
+                    position: absolute;
+                    left: 22px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #95a5a6;
+                    font-size: 18px;
+                    transition: color 0.3s ease;
+                }
+
+                .search-input:focus+.search-icon {
+                    color: #3498db;
+                }
+            }
+
+            .clubs-list1_left-spisok {
+                .lubs-list1_left-spisok-h3 {
+                    font-family: Inter;
+                    font-weight: 600;
+                    font-style: Semi Bold;
+                    font-size: 16px;
+                    leading-trim: NONE;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+
+                }
+
+                .clubs-list1_left-spisok-p {
+                    font-family: Inter;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 16px;
+                    leading-trim: NONE;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+
+
+                }
+            }
+        }
+
+        .clubs-list1_right {
+            display: flex;
+            flex-direction: column;
+            width: 712px;
+            height: 5928px;
+            // border: 1px solid black;
+        }
+    }
+}
