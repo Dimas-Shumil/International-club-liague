@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sass/css/judges.css">
-    <title>home</title>
+    <title>judges</title>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
             СУДЬИ
         </div>
 
-         <section class="main-judges_name">
+        <section class="main-judges_name">
             <div class="main-judges_name-left">
                 <p>
                     В составе Ассоциации 96 сертифицированных судей, <br>
@@ -50,13 +50,131 @@
             <div class="main-judges_name-rigth">
                 <img src="../images/judges/Frame 427319001.png" alt="file">
             </div>
-         </section>
+        </section>
 
-         <!-- таблица -->
+        <!-- таблица -->
 
-         <section class="main-judges_table">
+        <section class="main-judges_table">
+            <div class="controls">
+                <button id="addRowBtn"><i class="fas fa-plus"></i> Добавить запись</button>
+                <button id="highlightBtn"><i class="fas fa-highlighter"></i> Выделить первую категорию</button>
+                <button id="resetBtn"><i class="fas fa-redo"></i> Сбросить выделение</button>
+            </div>
 
-         </section>
+            <div class="table-container">
+                <table class="judges-table">
+                    <thead>
+                        <tr>
+                            <th><i class="fas fa-user"></i> Фамилия Имя Отчество</th>
+                            <th><i class="fas fa-map-marked-alt"></i> Субъект РФ</th>
+                            <th><i class="fas fa-city"></i> Город</th>
+                            <th><i class="fas fa-award"></i> Судейская категория</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Алексеева Анастасия Юрьевна</td>
+                            <td>Москва</td>
+                            <td>Москва</td>
+                            <td><span class="category-badge category-1">СС1К</span></td>
+                        </tr>
+                        <tr>
+                            <td>Алпеева Татьяна Андреевна</td>
+                            <td>Курская область</td>
+                            <td>Курск</td>
+                            <td><span class="category-badge category-2">СС2К</span></td>
+                        </tr>
+                        <tr>
+                            <td>Алтыева Арина Азадыевна </td>
+                            <td>Ставропольский край </td>
+                            <td>Ставрополь</td>
+                            <td><span class="category-badge category-3">СС2К</span></td>
+                        </tr>
+                        <tr>
+                            <td>Кузнецова Марина Игоревна</td>
+                            <td>Ставропольский край</td>
+                            <td>Ставрополь</td>
+                            <td><span class="category-badge category-2">СС2К</span></td>
+                        </tr>
+                        <tr>
+                            <td>Васильев Дмитрий Олегович</td>
+                            <td>Ставропольский край</td>
+                            <td>Ставрополь</td>
+                            <td><span class="category-badge category-4">СС2К</span></td>
+                        </tr>
+                        <tr>
+                            <td>Николаева Ольга Сергеевна</td>
+                            <td>Ставропольский край</td>
+                            <td>Ставрополь</td>
+                            <td><span class="category-badge category-2">СС2К</span></td>
+                        </tr>
+                        <tr>
+                            <td>Морозов Иван Васильевич</td>
+                            <td>Ставропольский край</td>
+                            <td>Ставрополь</td>
+                            <td><span class="category-badge category-5">СС2К</span></td>
+                        </tr>
+                        <tr>
+                            <td>Семенова Елена Александровна</td>
+                            <td>Ставропольский край </td>
+                            <td>Ставрополь</td>
+                            <td><span class="category-badge category-2">СС2К</span></td>
+                        </tr>
+                        <tr>
+                            <td>Федоров Павел Михайлович</td>
+                            <td>Ставропольский край </td>
+                            <td>Ставрополь</td>
+                            <td><span class="category-badge category-2">СС2К</span></td>
+                        </tr>
+                        <tr>
+                            <td>Дмитриева Ирина Викторовна</td>
+                            <td>Ставропольский край </td>
+                            <td>Ставрополь</td>
+                            <td><span class="category-badge category-2">СС2К</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- <div class="table-info">
+                <div class="stats">
+                    <div class="stat-item">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>Размер таблицы: 1720 × 688 px</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-list-ol"></i>
+                        <span>Записей: 10</span>
+                    </div>
+                </div> -->
+
+            <!-- <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: var(--category-1);"></div>
+                        <span>Первая категория</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: var(--category-2);"></div>
+                        <span>Вторая категория</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: var(--category-3);"></div>
+                        <span>Третья категория</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: var(--category-4);"></div>
+                        <span>Четвертая категория</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: var(--category-5);"></div>
+                        <span>Пятая категория</span>
+                    </div>
+                </div>
+            </div> -->
+            <!-- </div> -->
+
+
+        </section>
 
 
 
@@ -71,13 +189,13 @@
             <a href="site/pages/Contacts.html" class="previous round">&#8249;</a>
             <a href="site/pages/about.html" class="next round">&#8250;</a>
         </div>
-        </div>
+
 
         <button onclick="topFunction()" id="myBtn" title="Перейти к началу">вверх</button>
 
 
         <script async src="../script/js.js"></script>
-        <script async src="../script/script judges/judges.js"></script>
+        <script src="../script/scriptjudges/judges.js"></script>
     </main>
 
 </body>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '../header.css';
 * {
   box-sizing: border-box;
@@ -10,21 +11,22 @@
   flex-direction: column;
   justify-content: center;
   width: 1720px;
-  border: 1px solid black;
+  margin-left: 100px;
+  /* SCSS переменные для таблицы */
+  /* Общие стили для таблицы */
+  /* Распределение ширины колонок */
 }
 .main-judges .PAGE-HEADER {
   font-family: sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 56px;
-  leading-trim: NONE;
   line-height: 64px;
   letter-spacing: 0%;
   text-transform: uppercase;
   margin-top: 84px;
 }
 .main-judges .main-judges_name {
-  border: 1px solid green;
   width: 1720px;
   height: 85px;
   display: flex;
@@ -35,7 +37,6 @@
 .main-judges .main-judges_name .main-judges_name-left {
   width: 545px;
   height: 56px;
-  border: 1px solid blue;
   font-family: Inter;
   font-weight: 600;
   font-style: Semi Bold;
@@ -47,5 +48,241 @@
 .main-judges .main-judges_name .main-judges_name-rigth {
   width: 461px;
   height: 84px;
-  border: 1px solid blue;
+}
+.main-judges :root {
+  --table-width: 1720px;
+  --table-height: 688px;
+  --header-bg: #2c3e50;
+  --header-text: #ffffff;
+  --row-even: #f8f9fa;
+  --row-odd: #ffffff;
+  --row-hover: #e3f2fd;
+  --border-color: #dee2e6;
+  --text-color: #333333;
+  --category-1: #4caf50;
+  --category-2: #2196f3;
+  --category-3: #ff9800;
+  --category-4: #9c27b0;
+  --category-5: #f44336;
+}
+.main-judges .main-judges_table * {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-judges .main-judges_table {
+  width: 100%;
+  background-color: #f5f7fa;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+}
+.main-judges .main-judges_table .container {
+  max-width: calc(var(--table-width) + 40px);
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.main-judges .main-judges_table header {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.main-judges .main-judges_table h1 {
+  color: var(--header-bg);
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.main-judges .main-judges_table h1 i {
+  color: var(--category-2);
+}
+.main-judges .main-judges_table .description {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.5;
+}
+.main-judges .main-judges_table .table-container {
+  width: var(--table-width);
+  height: var(--table-height);
+  overflow: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  margin: 0 auto;
+}
+.main-judges .main-judges_table .judges-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.main-judges .main-judges_table .judges-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.main-judges .main-judges_table .judges-table th {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  font-weight: 600;
+  text-align: left;
+  padding: 20px 15px;
+  font-size: 1.1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  height: 68px;
+  /* Высота заголовка */
+}
+.main-judges .main-judges_table .judges-table th:last-child {
+  border-right: none;
+}
+.main-judges .main-judges_table .judges-table th i {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+.main-judges .main-judges_table .judges-table td {
+  padding: 18px 15px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+  height: 62px;
+  /* Высота строки данных */
+}
+.main-judges .main-judges_table .judges-table th:nth-child(1),
+.main-judges .main-judges_table .judges-table td:nth-child(1) {
+  width: 30%;
+  /* ФИО - 516px из 1720px */
+}
+.main-judges .main-judges_table .judges-table th:nth-child(2),
+.main-judges .main-judges_table .judges-table td:nth-child(2) {
+  width: 25%;
+  /* Субъект РФ - 430px из 1720px */
+}
+.main-judges .main-judges_table .judges-table th:nth-child(3),
+.main-judges .main-judges_table .judges-table td:nth-child(3) {
+  width: 25%;
+  /* Город - 430px из 1720px */
+}
+.main-judges .main-judges_table .judges-table th:nth-child(4),
+.main-judges .main-judges_table .judges-table td:nth-child(4) {
+  width: 20%;
+  /* Категория - 344px из 1720px */
+}
+.main-judges .main-judges_table .judges-table tbody tr:nth-child(even) {
+  background-color: var(--row-even);
+}
+.main-judges .main-judges_table .judges-table tbody tr:nth-child(odd) {
+  background-color: var(--row-odd);
+}
+.main-judges .main-judges_table .judges-table tbody tr:hover {
+  background-color: var(--row-hover);
+  transition: background-color 0.2s ease;
+}
+.main-judges .main-judges_table .category-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+  min-width: 120px;
+}
+.main-judges .main-judges_table .category-1 {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: var(--category-1);
+}
+.main-judges .main-judges_table .category-2 {
+  background-color: rgba(33, 150, 243, 0.15);
+  color: var(--category-2);
+}
+.main-judges .main-judges_table .category-3 {
+  background-color: rgba(255, 152, 0, 0.15);
+  color: var(--category-3);
+}
+.main-judges .main-judges_table .category-4 {
+  background-color: rgba(156, 39, 176, 0.15);
+  color: var(--category-4);
+}
+.main-judges .main-judges_table .category-5 {
+  background-color: rgba(244, 67, 54, 0.15);
+  color: var(--category-5);
+}
+.main-judges .main-judges_table .table-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: var(--table-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+.main-judges .main-judges_table .stats {
+  display: flex;
+  gap: 20px;
+}
+.main-judges .main-judges_table .stat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+.main-judges .main-judges_table .legend {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.main-judges .main-judges_table .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+}
+.main-judges .main-judges_table .legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.main-judges .main-judges_table .controls {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.main-judges .main-judges_table button {
+  padding: 10px 20px;
+  background-color: #386286;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.main-judges .main-judges_table button:hover {
+  background-color: #1a252f;
+}
+@media (max-width: 1750px) {
+  .main-judges .main-judges_table .table-container,
+  .main-judges .main-judges_table .table-info {
+    width: 95%;
+  }
+  .main-judges .main-judges_table .container {
+    padding: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .main-judges .main-judges_table .judges-table th,
+  .main-judges .main-judges_table .judges-table td {
+    padding: 12px 10px;
+    font-size: 0.95rem;
+  }
+  .main-judges .main-judges_table .category-badge {
+    min-width: 100px;
+    padding: 5px 8px;
+  }
 }/*# sourceMappingURL=judges.css.map */
