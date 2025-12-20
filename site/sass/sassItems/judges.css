@@ -1,0 +1,51 @@
+@import '../header.css';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-judges {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1720px;
+  border: 1px solid black;
+}
+.main-judges .PAGE-HEADER {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 56px;
+  leading-trim: NONE;
+  line-height: 64px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-top: 84px;
+}
+.main-judges .main-judges_name {
+  border: 1px solid green;
+  width: 1720px;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+}
+.main-judges .main-judges_name .main-judges_name-left {
+  width: 545px;
+  height: 56px;
+  border: 1px solid blue;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+.main-judges .main-judges_name .main-judges_name-rigth {
+  width: 461px;
+  height: 84px;
+  border: 1px solid blue;
+}/*# sourceMappingURL=judges.css.map */
