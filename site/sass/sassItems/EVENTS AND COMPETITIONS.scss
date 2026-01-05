@@ -25,6 +25,20 @@ $colorRed: #ED1C24;
 
     }
 
+    h4 {
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        color: $colorRed ;
+    }
+
+    p {
+        margin-top: -16px;
+    }
+
     .section-one {
         // width: 845px;
         // height: 598px;
@@ -35,16 +49,6 @@ $colorRed: #ED1C24;
         gap: 32px;
         border: 1px solid grey;
 
-        h4 {
-            font-family: Inter;
-            font-weight: 600;
-            font-style: Semi Bold;
-            font-size: 20px;
-            line-height: 28px;
-            letter-spacing: 0%;
-            color: $colorRed ;
-
-        }
 
         .section-one_span {
             font-family: Oswald;
@@ -56,10 +60,105 @@ $colorRed: #ED1C24;
             text-transform: uppercase;
 
         }
+
         .section-one_address {
             display: flex;
             gap: 8px;
             margin-left: 24px;
         }
     }
+
+    .section-two {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        h4 {
+            margin-top: 32px;
+        }
+
+        p {
+            margin-top: 16px;
+        }
+
+    }
+
+    .section-three {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        h4 {
+            margin-top: 32px;
+        }
+
+        p {
+            margin-top: 16px;
+        }
+
+        li {
+            margin-top: 16px;
+            margin-left: 26px;
+        }
+
+        span {
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: #BF9932;
+
+        }
+
+        .section-three_text {
+            font-family: Inter;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: #262626;
+        }
+    }
+
+    .section-four {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    h4 {
+        margin-top: 32px;
+    }
+
+    p {
+        margin-top: 16px;
+    }
+
+    li {
+        margin-top: 16px;
+        margin-left: 26px;
+    }
+
+    #myBtn {
+        display: none;
+        // скрыть по умолчанию
+        position: fixed;
+        // Фиксированное / липкое положение
+        bottom: 20px;
+        // Поместите кнопку в нижней части страницы
+        right: 30px;
+        // Разместить кнопку 30 пикселей от правого
+        padding: 10px 15px;
+        transition: all 0.5s;
+    }
+
+    #myBtn:hover {
+        background-color: #8ac6e9;
+        transform: scale(1.1);
+        border-radius: 10px;
+    }
+
 }

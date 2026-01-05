@@ -244,15 +244,7 @@ a:hover {
   text-transform: uppercase;
   color: #ED1C24;
 }
-.main .section-one {
-  width: 100%;
-  max-width: 845px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  border: 1px solid grey;
-}
-.main .section-one h4 {
+.main h4 {
   font-family: Inter;
   font-weight: 600;
   font-style: Semi Bold;
@@ -260,6 +252,17 @@ a:hover {
   line-height: 28px;
   letter-spacing: 0%;
   color: #ED1C24;
+}
+.main p {
+  margin-top: -16px;
+}
+.main .section-one {
+  width: 100%;
+  max-width: 845px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: 1px solid grey;
 }
 .main .section-one .section-one_span {
   font-family: Oswald;
@@ -274,4 +277,76 @@ a:hover {
   display: flex;
   gap: 8px;
   margin-left: 24px;
+}
+.main .section-two {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.main .section-two h4 {
+  margin-top: 32px;
+}
+.main .section-two p {
+  margin-top: 16px;
+}
+.main .section-three {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.main .section-three h4 {
+  margin-top: 32px;
+}
+.main .section-three p {
+  margin-top: 16px;
+}
+.main .section-three li {
+  margin-top: 16px;
+  margin-left: 26px;
+}
+.main .section-three span {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #BF9932;
+}
+.main .section-three .section-three_text {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #262626;
+}
+.main .section-four {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.main h4 {
+  margin-top: 32px;
+}
+.main p {
+  margin-top: 16px;
+}
+.main li {
+  margin-top: 16px;
+  margin-left: 26px;
+}
+.main #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 10px 15px;
+  transition: all 0.5s;
+}
+.main #myBtn:hover {
+  background-color: #8ac6e9;
+  transform: scale(1.1);
+  border-radius: 10px;
 }/*# sourceMappingURL=EVENTS AND COMPETITIONS.css.map */
