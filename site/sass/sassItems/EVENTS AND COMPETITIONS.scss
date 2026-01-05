@@ -1,0 +1,65 @@
+@import '../header.scss';
+// ПЕРЕМЕННЫЕ
+$colorRed: #ED1C24;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 80px;
+
+    h3 {
+        // font-family: Oswald;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: $colorRed;
+
+    }
+
+    .section-one {
+        // width: 845px;
+        // height: 598px;
+        width: 100%;
+        max-width: 845px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        border: 1px solid grey;
+
+        h4 {
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: $colorRed ;
+
+        }
+
+        .section-one_span {
+            font-family: Oswald;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+
+        }
+        .section-one_address {
+            display: flex;
+            gap: 8px;
+            margin-left: 24px;
+        }
+    }
+}
