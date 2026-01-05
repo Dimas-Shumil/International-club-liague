@@ -262,7 +262,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  border: 1px solid grey;
 }
 .main .section-one .section-one_span {
   font-family: Oswald;
