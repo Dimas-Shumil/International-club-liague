@@ -8,6 +8,16 @@ body {
   display: flex !important;
 }
 
+.header-top {
+  background-color: #006daa;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #faf6f2;
+  height: 64px;
+}
+
 .header {
   display: flex;
   justify-content: space-around;

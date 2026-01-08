@@ -7,6 +7,38 @@ body {
     display: flex !important;
 }
 
+// header top
+.header-top_top {
+    background-color: #006daa;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #faf6f2;
+    height: 64px;
+    gap: 20px;
+    padding-right: 150px;
+
+    input {
+        width: 200px;
+        height: 28px;
+        border-radius: 50px;
+        border: 1px solid #faf6f2;
+        padding: 5px;
+        padding-left: 15px;
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        text-align: center;
+
+    }
+
+}
+
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -210,13 +242,15 @@ nav ul {
     filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #666666);
 }
+
 a {
     transition: all 0.5s;
 }
+
 a:hover {
     color: white;
     transform: scale(1.1);
-    
+
 }
 
 .previous {
